@@ -35,10 +35,10 @@ public class AutomationPractice {
     public WebElement shoppingCartButton;
 
     @FindBy(id = "group_1")
-    public WebElement sizeSelect;
+    public WebElement sizeSelect;   // beden secme
 
     @FindBy(id = "add_to_cart")
-    public WebElement addToCart;
+    public WebElement addToCart;    // sepete ekleme
 
     @FindBy(xpath = "//*[@title='Proceed to checkout']")
     public WebElement proceedToCheckout;    // odemeye dogru direk ilerle
@@ -48,5 +48,50 @@ public class AutomationPractice {
 
     @FindBy(xpath = "//*[@class='icon-trash']")
     public List<WebElement> iconTrash;
+
+    @FindBy(xpath = "//div[@class='header_user_info']")
+    public WebElement homePageSigninButton;
+
+    @FindBy(xpath = "//*[@id='email_create']")
+    public WebElement createAccountEmail;   // kayıt bolumu email kutusu
+
+    @FindBy(xpath = "//*[@class='icon-user left']")
+    public WebElement createAnAccount;  // kayıt ol
+
+    @FindBy(xpath = "//*[@id='id_gender1']")
+    public WebElement genderMaleRadio;      // erkek butonu
+
+    @FindBy(xpath = "//*[@id='id_gender2']")
+    public WebElement genderFemaleRadio;      // erkek butonu
+
+    @FindBy(xpath = "//*[@id='customer_firstname']")
+    public WebElement firstName;
+
+    @FindBy(xpath = "//*[@id='customer_lastname']")
+    public WebElement lastName;
+
+    @FindBy(xpath = "//*[@id='passwd']")
+    public WebElement password;
+
+    @FindBy(xpath = "//*[@id='days']")
+    public WebElement dayDropdown;
+
+    @FindBy(xpath = "//*[@id='months']")
+    public WebElement monthDropdown;
+
+    @FindBy(xpath = "//*[@id='years']")
+    public WebElement yearDropdown;
+
+    @FindBy(id = "submitAccount")
+    public WebElement registerButton;    // register kayıt ol butonu
+
+    @FindBy(id = "alert alert-success")
+    public WebElement registrationCompleted;       // kayıt tamamlandı mesajı
+
+    @FindBy(xpath = "(//div[@class='header_user_info'])[1]")
+    public WebElement myAccountHeader;  // Hesap basligi
+
+    @FindBy(xpath = "//*[@class='logout']")
+    public WebElement signoutButton;
 
 }
