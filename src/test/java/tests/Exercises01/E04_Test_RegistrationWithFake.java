@@ -1,4 +1,4 @@
-package tests.Calismalar_1;
+package tests.Exercises01;
 
 import com.github.javafaker.Faker;
 import org.openqa.selenium.support.ui.Select;
@@ -10,7 +10,7 @@ import utilities.Driver;
 import utilities.ReusableMethods;
 
 
-public class E04_Test {
+public class E04_Test_RegistrationWithFake {
 
     @Test
     public void test01(){

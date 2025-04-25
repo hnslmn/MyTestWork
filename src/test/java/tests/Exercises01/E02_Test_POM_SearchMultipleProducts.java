@@ -1,4 +1,4 @@
-package tests.Calismalar_1;
+package tests.Exercises01;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -12,7 +12,7 @@ import utilities.Driver;
 import utilities.ReusableMethods;
 
 @Test
-public class E02_Test {
+public class E02_Test_POM_SearchMultipleProducts {
 
     public void test01(){
 

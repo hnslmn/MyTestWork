@@ -1,4 +1,4 @@
-package tests.Calismalar_1;
+package tests.Exercises01;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -12,7 +12,7 @@ import utilities.ReusableMethods;
 
 import java.util.List;
 
-public class E01_Test {
+public class E01_Test_SearchAndAddToCart {
 
     @Test
     public void test01(){

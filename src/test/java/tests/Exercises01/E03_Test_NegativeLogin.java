@@ -1,4 +1,4 @@
-package tests.Calismalar_1;
+package tests.Exercises01;
 
 import com.github.javafaker.Faker;
 import org.openqa.selenium.By;
@@ -11,7 +11,7 @@ import utilities.Driver;
 import utilities.ReusableMethods;
 
 
-public class E03_Test {
+public class E03_Test_NegativeLogin {
 
     @Test
     public void test01(){

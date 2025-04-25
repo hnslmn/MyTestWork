@@ -1,4 +1,4 @@
-package tests.Calismalar_1;
+package tests.Exercises01;
 
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
@@ -9,10 +9,7 @@ import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.ReusableMethods;
 
-import java.security.AccessControlContext;
-import java.security.Key;
-
-public class E05_Test {
+public class E05_Test_PositiveLoginWithConfig {
 
     @Test
     public void test01(){

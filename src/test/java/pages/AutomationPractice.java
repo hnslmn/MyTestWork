@@ -94,4 +94,28 @@ public class AutomationPractice {
     @FindBy(xpath = "//*[@class='logout']")
     public WebElement signoutButton;
 
+    @FindBy(id = "contact-link")
+    public WebElement contactUs;
+
+    @FindBy(id = "id_contact")
+    public WebElement konuBasligiDropdown;
+
+    @FindBy(xpath = "//*[@id='email']")
+    public WebElement contactEmail;
+
+    @FindBy(xpath = "//*[@id='id_order']")
+    public WebElement orderReference;
+
+    @FindBy(xpath = "//*[@id='message']")
+    public WebElement messageBox;
+
+    @FindBy(xpath = "//*[@id='fileUpload']")
+    public WebElement fileUbload;
+
+    @FindBy(id = "submitMessage")
+    public WebElement submitMessage;
+
+    @FindBy(xpath = "//*[@class='alert alert-success']")
+    public WebElement successMessage;
+
 }
