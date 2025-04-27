@@ -1,7 +1,5 @@
 package tests.Exercises01;
 
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.AutomationPractice;
@@ -9,39 +7,40 @@ import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.ReusableMethods;
 
-public class E05_Test_PositiveLoginWithConfig {
+public class E07_Test_Logout {
 
     @Test
-    public void test01(){
+    public void Test01(){
 
         // https://automationpractice.pl/index.php adresine git
         Driver.getDriver().get(ConfigReader.getProperty("cptUrl"));
+        ReusableMethods.bekle(2);
 
-        // Sign in butonuna tıkla
+        // Sağ üstteki "Sign in" butonuna tıkla
         AutomationPractice automationPractice = new AutomationPractice();
         automationPractice.homePageSigninButton.click();
 
-        // Email ve şifreyi config'den al
+        // ConfigReader'dan email ve şifre bilgilerini al, giriş yap
         String email = ConfigReader.getProperty("cptEmail");
         String password = ConfigReader.getProperty("cptPassword");
 
-        // Email ve şifreyi gir
         automationPractice.emailAdressFeld.sendKeys(email);
         automationPractice.passwordFeld.sendKeys(password);
 
-        Actions actions = new Actions(Driver.getDriver());
-        actions.sendKeys(Keys.ARROW_DOWN).perform();
-
-        // Sign in
         automationPractice.signinButton.click();
-
         ReusableMethods.bekle(2);
 
-        // Başarılı giriş yapıldığını doğrula
+        // Başarılı login olduğunu doğrula ("My account" ya da "Sign out" butonu görünsün)
         Assert.assertTrue(automationPractice.signoutButton.isDisplayed());
 
-        // Tarayıcıyı kapat
-        Driver.quitDriver();
+        // "Sign out" butonuna tıkla
+        automationPractice.signoutButton.click();
+
+        // Tekrar login ekranına döndüğünü doğrula (email-password alanları görünür mü kontrol et)
+        Assert.assertTrue(automationPractice.homePageSigninButton.isDisplayed());
+
+        // sayfayi kapat
+        // Driver.quitDriver();
 
     }
 }

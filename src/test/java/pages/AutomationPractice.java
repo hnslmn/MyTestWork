@@ -23,7 +23,7 @@ public class AutomationPractice {
     public WebElement loginButton;
 
     @FindBy(xpath = "//*[@id='email']")
-    public WebElement emailAdressfeld;
+    public WebElement emailAdressFeld;
 
     @FindBy(xpath = "//*[@id='passwd']")
     public WebElement passwordFeld;

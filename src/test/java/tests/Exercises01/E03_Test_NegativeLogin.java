@@ -36,7 +36,7 @@ public class E03_Test_NegativeLogin {
 
         // E-posta ve şifre alanlarına bu bilgileri yaz
 
-        automationPractice.emailAdressfeld.sendKeys(fakeEmail);
+        automationPractice.emailAdressFeld.sendKeys(fakeEmail);
         automationPractice.passwordFeld.sendKeys(fakePassword);
 
 
