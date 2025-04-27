@@ -39,8 +39,8 @@ public class E07_Test_Logout {
         // Tekrar login ekranına döndüğünü doğrula (email-password alanları görünür mü kontrol et)
         Assert.assertTrue(automationPractice.homePageSigninButton.isDisplayed());
 
-        // sayfayi kapat
-        // Driver.quitDriver();
+        // sayfayi kapatir
+        Driver.quitDriver();
 
     }
 }

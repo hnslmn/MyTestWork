@@ -278,4 +278,11 @@ public class ReusableMethods {
         FileUtils.copyFile(geciciDosya, asilResimDosyasi);
         return dosyaYolu;
     }
+
+    public static void geriGit(int kacKere){
+        for (int i = 0; i < kacKere; i++) {
+            Driver.getDriver().navigate().back();
+            bekle(1);
+        }
+    }
 }
