@@ -88,7 +88,7 @@ public class AutomationPractice {
     @FindBy(id = "alert alert-success")
     public WebElement registrationCompleted;       // kayıt tamamlandı mesajı
 
-    @FindBy(xpath = "(//div[@class='header_user_info'])[1]")
+    @FindBy(xpath = "//div[@class='header_user_info']")
     public WebElement myAccountHeader;  // Hesap basligi
 
     @FindBy(xpath = "//*[@class='logout']")
